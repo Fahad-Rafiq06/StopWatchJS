@@ -53,4 +53,26 @@ function timer(){
 
 }
 
-interval = setInterval(timer, 10)
+function start(){
+    interval = setInterval(timer, 10);
+    document.querySelector('#startbtn').disabled = true;
+    // var stopbtn = documnet.querySelector("#stopbtn");
+    // var resetbtn = documnet.querySelector("#resetbtn");
+    // if(stopbtn.enabled == true && resetbtn.enabled == true){
+    // document.querySelector('#startbtn').disabled = true;
+}
+// }
+
+function stop(){
+    clearInterval(interval)
+}
+
+function reset(){
+    min = 0;
+    sec = 0;
+    msec = 0;
+    minHeading.innerHTML = min;
+    secHeading.innerHTML = sec;
+    msecHeading.innerHTML = msec;
+    stop()
+}
