@@ -45,6 +45,11 @@ function timer(){
         secHeading.innerHTML = sec
         msec = 0
     }
+    if(sec >=59 ){
+        min++;
+        minHeading.innerHTML = min;
+        sec=0;
+    }
 
 }
 
