@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stop Watch</title>
     
 </head>
 <style>
@@ -30,15 +30,15 @@
     <div>
         <h1 id="min">0</h1>
         <h1 id="sec">0</h1>
-        <h1 id="msec">abc</h1>
+        <h1 id="msec">0</h1>
     </div>
     <div>
-        <button>Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
+        <button onclick="start()" id="startbtn">Start</button>
+        <button onclick="stop()" id="stopbtn">Stop</button>
+        <button onclick="reset()" id="resetbtn">Reset</button>
     </div>
 
-    <button onclick="timer()">fahad</button>
+    
     
 </body>
 <script src="app.js"></script>
